@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 389925053}
   - component: {fileID: 389925052}
+  - component: {fileID: 389925054}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -242,12 +243,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 389925051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8238b50d6080d5c409ac73f6c06204b7, type: 3}
+  m_Script: {fileID: 11500000, guid: e1da1e3198da07b449b1958120bbe2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
-  change: 0.75
-  isDay: 0
+  hairColor: 
+  age: 0
 --- !u!4 &389925053
 Transform:
   m_ObjectHideFlags: 0
@@ -262,6 +262,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389925054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389925051}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8238b50d6080d5c409ac73f6c06204b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  change: 0.75
+  isDay: 1
 --- !u!1 &1333849553
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +288,7 @@ GameObject:
   - component: {fileID: 1333849556}
   - component: {fileID: 1333849555}
   - component: {fileID: 1333849554}
+  - component: {fileID: 1333849557}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -300,7 +316,7 @@ Terrain:
   m_GameObject: {fileID: 1333849553}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: dd4888fc8b6b39d498596ec23234718d, type: 2}
+  m_TerrainData: {fileID: 0}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -338,6 +354,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333849557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333849553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa31b29973c482f4284c673a8eff3ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1556735102
 GameObject:
   m_ObjectHideFlags: 0
