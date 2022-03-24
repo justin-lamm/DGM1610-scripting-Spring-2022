@@ -15,15 +15,12 @@ public class Balloon: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Reference ScoreManager Component
+        scoremanager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     void OnMouseDown()
     {
         //Reduce clicks by one
