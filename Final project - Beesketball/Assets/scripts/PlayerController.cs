@@ -37,6 +37,13 @@ public class PlayerController : MonoBehaviour
     public int coins;
     public int gems;
 
+    public AudioClip marker;
+    public AudioClip marker2;
+    public AudioClip marker3;
+    private AudioSource source;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +52,8 @@ public class PlayerController : MonoBehaviour
 
         curHP = maxHP;
         healthBar.SetHealth(maxHP);
+
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -98,6 +107,8 @@ public class PlayerController : MonoBehaviour
     {
         curHP -= damage;
         healthBar.SetHealth(curHP);
+
+        source.PlayOneShot(marker, 1.0f);
         
         if (curHP <= 0)
         {
@@ -107,6 +118,10 @@ public class PlayerController : MonoBehaviour
     
     void Die()
     {
-        Debug.Log("You just got BEEed!");
+        Debug.Log("You just got BEEed BOIII!");
+
+
+        source.PlayOneShot(marker3, 1.0f);
+        source.PlayOneShot(marker2, 1.0f);
     }
 }
