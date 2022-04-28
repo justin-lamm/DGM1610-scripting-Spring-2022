@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         //Ground Check Sensor
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-        moveVelocity = 0f;
+        moveVelocity = 0.0f;
 
 
         if(Input.GetKey(KeyCode.D))
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         // move player left and right
         rb.velocity = new Vector2(moveVelocity, rb.velocity.y);
 
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if(Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             Jump();
         }
