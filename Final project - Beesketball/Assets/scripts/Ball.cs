@@ -14,7 +14,7 @@ public class Ball : MonoBehaviour
 
     public int damage;
 
-    public AudioClip marker;
+    public AudioClip bounce;
     private AudioSource source;
 
     
@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {   
-        source.PlayOneShot(marker, 1.0f);
+        source.PlayOneShot(bounce, 1.0f);
         if(other.CompareTag("Qbee"))
         {
             

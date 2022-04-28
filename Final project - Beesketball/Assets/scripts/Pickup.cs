@@ -9,7 +9,9 @@ public class Pickup : MonoBehaviour
 
     public int pickupAmount;
     private PlayerController playerController;
-    // Start is called before the first frame update
+
+    
+    
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -23,7 +25,11 @@ public class Pickup : MonoBehaviour
             {
                 playerController.key = pickupAmount;
 
+                
+
                 Debug.Log("You have pick up a Golden Key!");
+
+                
 
             }
 

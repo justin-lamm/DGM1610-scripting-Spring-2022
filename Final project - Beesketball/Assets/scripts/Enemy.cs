@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public int curHP;
     public int maxHP;
 
-    [Header("Enemy Attack")]
+    
 
     
     public PlayerController player;
@@ -16,14 +16,16 @@ public class Enemy : MonoBehaviour
     [Header("Loot Drop")]
     public GameObject lootDrop;
 
+    
 
-    // Start is called before the first frame update
+
+    
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
+    
     
 
     public void TakeDamage(int damage)
@@ -34,6 +36,8 @@ public class Enemy : MonoBehaviour
         {
             Die();
             LootDrop();
+
+            
         }
 
     }
@@ -41,6 +45,9 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+
+        
+
     }
 
     void LootDrop()

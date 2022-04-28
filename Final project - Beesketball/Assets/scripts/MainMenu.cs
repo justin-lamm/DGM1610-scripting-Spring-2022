@@ -8,8 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public int sceneToLoad;
 
-    public AudioClip marker7;
-    private AudioSource source;
+    
 
     
 
@@ -26,7 +25,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit Game");
 
-        source.PlayOneShot(marker7, 1.0f);
+        
         
     }
 }

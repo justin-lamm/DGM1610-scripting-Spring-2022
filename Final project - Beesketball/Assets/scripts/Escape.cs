@@ -16,16 +16,16 @@ public class Escape : MonoBehaviour
 
     public float startDelay;
 
-    public GameObject projectile;
+    
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if(Vector2.Distance(transform.position, target.position) > stopDistance)

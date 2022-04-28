@@ -37,9 +37,9 @@ public class PlayerController : MonoBehaviour
     public int coins;
     public int gems;
 
-    public AudioClip marker;
-    public AudioClip marker2;
-    public AudioClip marker3;
+    public AudioClip scream;
+    public AudioClip yougotbeedboi;
+    public AudioClip deadscream;
     private AudioSource source;
 
 
@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
         curHP -= damage;
         healthBar.SetHealth(curHP);
 
-        source.PlayOneShot(marker, 1.0f);
+        source.PlayOneShot(scream, 1.0f);
         
         if (curHP <= 0)
         {
@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("You just got BEEed BOIII!");
 
 
-        source.PlayOneShot(marker3, 1.0f);
-        source.PlayOneShot(marker2, 1.0f);
+        source.PlayOneShot(deadscream, 1.0f);
+        source.PlayOneShot(yougotbeedboi, 1.0f);
     }
 }

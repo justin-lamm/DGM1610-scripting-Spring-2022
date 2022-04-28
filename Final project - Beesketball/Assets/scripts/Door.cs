@@ -6,7 +6,9 @@ public class Door : MonoBehaviour
 {
     
     private PlayerController playerController;
-    // Start is called before the first frame update
+
+    
+    
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -18,10 +20,14 @@ public class Door : MonoBehaviour
         {
             Debug.Log("You Open the Door!");
             Destroy(gameObject);
+
+            
         }
         else
         {
             Debug.Log("Door is locked. You need a key");
+
+           
         }
     }
 
